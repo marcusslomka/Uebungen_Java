@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class SchereSteinPapier {
-
+    //*Vorwarnung: der Bot ist gehässig, konnte ich nicht beeinflussen */
     public static void main(String[] args) {
         //implementieren des Scanners
         Scanner scanner = new Scanner(System.in);
@@ -17,8 +17,10 @@ public class SchereSteinPapier {
                 System.out.println("Das Spiel wurde beendet! Tschüsseldorf");
                 break;
             }
-
             String zeichenSpieler = zugSpieler(zugInput); //Input wird in String umgewandelt
+            if (zeichenSpieler == "004") {
+                System.out.println("Fehler, bitte erneut deinen Zug eingeben");
+            }
             String zeichenBot = zugBot(); //Zahl für den Bot wird generiert, umgewandelt und kommt als String zurück
             spielentscheidung(zeichenSpieler, zeichenBot);
         }
@@ -42,9 +44,9 @@ public class SchereSteinPapier {
         } else if (input == 3) {
             String outputZugSpieler = "Beenden";
             return outputZugSpieler;
-        } else {
-            return "Fehler";
-        }
+            
+        }  else { return "004"; }
+        
     }
     //Erstellen der Methode ZugBot, bei der der Zug des Bots erstellt wird
     public static String zugBot() {
