@@ -11,16 +11,21 @@ public class SchereSteinPapierErweitert {
     public static final int BOT = 5;
     public static final int UNENTSCHIEDEN = 6;
     public static final int FEHLER = 99;
+
+    public static int countSpieler = 0;
+    public static int countBot = 0;
+    public static int countUnentschieden = 0;
+    public static int counterRounds = 0;
+    public static int winStreakSpieler = 0;
+    public static int winStreakBot = 0;
+        
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("\n");
         System.out.println("Hallo und Willkommen beim Schere Stein Papier Spiel!");
-        int countSpieler = 0;
-        int countBot = 0;
-        int countUnentschieden = 0;
-        int counterRounds = 0;
-
+        
+        
         while (true) {
             System.out.println("Deine Wahl: 0: Schere , 1: Stein , 2: Papier oder 3: Beenden");
             int zugInput = scanner.nextInt(); //Input wird eingelesen
@@ -38,16 +43,13 @@ public class SchereSteinPapierErweitert {
             int zeichenBot = zugBot(); 
             int ergebnis = spielentscheidung(zeichenSpieler, zeichenBot);
             ausgabeGewinner(ergebnis);
-
-            if (ergebnis == SPIELER) countSpieler++;
-            if (ergebnis == BOT) countBot++;
-            if (ergebnis == UNENTSCHIEDEN) countUnentschieden++;
+            counter(ergebnis);
             counterRounds++;
-            
-            ausgabeCounter(countSpieler, countBot, countUnentschieden, counterRounds);
+            abfrageWinStreak();
+            ausgabeCounter();
         }
         scanner.close();
-        ausgabeEndsieger(countSpieler, countBot, countUnentschieden, counterRounds);
+        ausgabeEndsieger();
     }
     //Erstellen der Methode ZugSpieler, bei der die Eingabe des Spielers verarbeitet wird
     public static int zugSpieler(int input) {
@@ -104,28 +106,59 @@ public class SchereSteinPapierErweitert {
             System.out.println();
         }
     }
-
-    public static void ausgabeCounter(int spieler, int bot, int unentschieden, int gesamt) {
-        System.out.println("Zwischenstand: Spieler: " + spieler);
-        System.out.println("Bot: " + bot);
-        System.out.println("Unentschieden: " + unentschieden);
-        System.out.println("Gesamtrundenanzahl: " + gesamt);
+    
+    public static void ausgabeCounter() {
+        System.out.println("Zwischenstand: Spieler: " + countSpieler);
+        System.out.println("Bot: " + countBot);
+        System.out.println("Unentschieden: " + countUnentschieden);
+        System.out.println("Gesamtrundenanzahl: " + counterRounds);
         System.out.print("\n \n");
     }
-    public static void ausgabeEndsieger(int spieler, int bot, int unentschieden, int gesamt) {
+    
+    public static void ausgabeEndsieger() {
         System.out.println("Endstand:");
-        System.out.println("Spieler: " + spieler);
-        System.out.println("Bot: " + bot);
-        System.out.println("Unentschieden: " + unentschieden);
-        System.out.println("Gesamtrundenanzahl: " + gesamt);
+        System.out.println("Spieler: " + countSpieler);
+        System.out.println("Bot: " + countBot);
+        System.out.println("Unentschieden: " + countUnentschieden);
+        System.out.println("Gesamtrundenanzahl: " + counterRounds);
         System.out.println();
-        if (spieler > bot) {
+        if (countSpieler > countBot) {
             System.out.println("Gesamtgewinner bist ..?! du! Herzlichen Glückwunsch.. *klatscht sarkastisch langsam*");
-        } else if (spieler < bot){
+        } else if (countSpieler < countBot) {
             System.out.println("Gesamtgewinner bin wohl mal wieder ich? UNERWARTET! *hängt sich Medaille selbst um*");
         } else {
             System.out.println("UNENTSCHIEDEN??! Nach sovielen Spielen?! *Bot disconnected*");
         }
         System.out.print("\n \n \n");
+    }
+
+    public static void abfrageWinStreak() {
+        if (winStreakSpieler == 3) {
+            countSpieler++;
+            winStreakSpieler = 0;
+            System.out.println("OMG WHAT A STREAK !! !!! !! !!!!! 3 IN A ROWWWW !!!!! THREEEEEEEEE !!!! ");
+            System.out.println();
+        } else if (winStreakBot == 3) {
+            countBot++;
+            winStreakBot = 0;
+            System.out.println("OMG WHAT A STREAK !! !!! !! !!!!! 3 IN A ROWWWW !!!!! THREEEEEEEEE !!!! ");
+            System.out.println();
+        } 
+    }
+
+    public static void counter(int ergebnis) {
+        if (ergebnis == SPIELER) {      //Counter werden hochegezählt und möglicher Win-Streak erfasst
+            countSpieler++;
+            winStreakSpieler ++;
+            winStreakBot = 0;
+        }else if (ergebnis == BOT) {
+            countBot++;
+            winStreakBot++;
+            winStreakSpieler = 0;
+        } else if (ergebnis == UNENTSCHIEDEN) {
+            countUnentschieden++;
+            winStreakBot = 0;
+            winStreakSpieler = 0;
+        }
     }
 }
