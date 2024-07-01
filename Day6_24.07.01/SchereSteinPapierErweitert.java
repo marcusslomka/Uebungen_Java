@@ -14,18 +14,21 @@ public class SchereSteinPapierErweitert {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-
+        System.out.print("\n");
         System.out.println("Hallo und Willkommen beim Schere Stein Papier Spiel!");
         int countSpieler = 0;
         int countBot = 0;
         int countUnentschieden = 0;
+        int counterRounds = 0;
+
         while (true) {
             System.out.println("Deine Wahl: 0: Schere , 1: Stein , 2: Papier oder 3: Beenden");
             int zugInput = scanner.nextInt(); //Input wird eingelesen
 
             //Falls beendet werden soll, wird dies hier abgefragt und eingeleitet
             if (zugInput == BEENDEN) {
-                System.out.println("Das Spiel wurde beendet! Tschüsseldorf");
+                System.out.print("\n \n \n");
+                System.out.println("Das Spiel wurde beendet!");
                 break;
             }
             int zeichenSpieler = zugSpieler(zugInput); //Input wird in String umgewandelt
@@ -34,18 +37,17 @@ public class SchereSteinPapierErweitert {
             }
             int zeichenBot = zugBot(); 
             int ergebnis = spielentscheidung(zeichenSpieler, zeichenBot);
-            ausgabeErgebnis(ergebnis);
+            ausgabeGewinner(ergebnis);
 
-            if (ergebnis == SPIELER)
-                return countSpieler++;
-            if (ergebnis == BOT)
-                return countBot++;
-            if (ergebnis == UNENTSCHIEDEN)
-                return countUnentschieden++;
+            if (ergebnis == SPIELER) countSpieler++;
+            if (ergebnis == BOT) countBot++;
+            if (ergebnis == UNENTSCHIEDEN) countUnentschieden++;
+            counterRounds++;
+            
+            ausgabeCounter(countSpieler, countBot, countUnentschieden, counterRounds);
         }
         scanner.close();
-        System.out.println("Danke fürs Mitspielen!");
-        System.out.println("Das Endergebnis liegt bei: "/n);
+        ausgabeEndsieger(countSpieler, countBot, countUnentschieden, counterRounds);
     }
     //Erstellen der Methode ZugSpieler, bei der die Eingabe des Spielers verarbeitet wird
     public static int zugSpieler(int input) {
@@ -83,7 +85,7 @@ public class SchereSteinPapierErweitert {
         } else return BOT;
     }
     //
-    public static void ausgabeErgebnis(int winner) {
+    public static void ausgabeGewinner(int winner) {
 
         if (winner == UNENTSCHIEDEN) {
             System.out.println();
@@ -101,5 +103,29 @@ public class SchereSteinPapierErweitert {
             System.out.println("Ich gewinne!! You suck hard.. lol");
             System.out.println();
         }
+    }
+
+    public static void ausgabeCounter(int spieler, int bot, int unentschieden, int gesamt) {
+        System.out.println("Zwischenstand: Spieler: " + spieler);
+        System.out.println("Bot: " + bot);
+        System.out.println("Unentschieden: " + unentschieden);
+        System.out.println("Gesamtrundenanzahl: " + gesamt);
+        System.out.print("\n \n");
+    }
+    public static void ausgabeEndsieger(int spieler, int bot, int unentschieden, int gesamt) {
+        System.out.println("Endstand:");
+        System.out.println("Spieler: " + spieler);
+        System.out.println("Bot: " + bot);
+        System.out.println("Unentschieden: " + unentschieden);
+        System.out.println("Gesamtrundenanzahl: " + gesamt);
+        System.out.println();
+        if (spieler > bot) {
+            System.out.println("Gesamtgewinner bist ..?! du! Herzlichen Glückwunsch.. *klatscht sarkastisch langsam*");
+        } else if (spieler < bot){
+            System.out.println("Gesamtgewinner bin wohl mal wieder ich? UNERWARTET! *hängt sich Medaille selbst um*");
+        } else {
+            System.out.println("UNENTSCHIEDEN??! Nach sovielen Spielen?! *Bot disconnected*");
+        }
+        System.out.print("\n \n \n");
     }
 }
