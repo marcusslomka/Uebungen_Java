@@ -9,7 +9,7 @@ public class Palindrom {
             if (input.charAt(i) == ' ') {
                 i++;
             }
-            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+            if (input.charAt(i) != input.charAt(input.length() - (i+1))) {
                 return false;
             }
         }
