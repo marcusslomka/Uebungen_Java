@@ -17,6 +17,6 @@ public class Fakultaet {
             return 1;
         //5*4*3*2*1
         //4*3*2*1
-        return fakultaet2(n - 1) * n;
+        return n * fakultaet2(n - 1);
     }
 }
