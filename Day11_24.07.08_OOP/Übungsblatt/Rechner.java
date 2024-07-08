@@ -13,9 +13,15 @@ public class Rechner {
         Übungsblatt blatt11 = new Übungsblatt(11, 60, 42);
         Übungsblatt blatt12 = new Übungsblatt(12, 60, 44);
         Übungsblatt blatt13 = new Übungsblatt(13, 60, 38);
+
+        //todo:
+        //Blätter in einem Array angelegt werden
+        //aufsteigende nummern ab 1
+        //erreichte Punktzahl zwischen 0 und 60
         
         System.out.println(blatt1.wiedergabe());
         System.out.println(blatt2.wiedergabe());
         System.out.println(blatt3.wiedergabe());
+
     }
 }
