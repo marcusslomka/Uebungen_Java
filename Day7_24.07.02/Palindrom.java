@@ -1,6 +1,6 @@
 public class Palindrom {
     public static void main(String[] args) {
-        System.out.println(checkPalindrom("Ein Esel lese nie"));
+        System.out.println(checkPalindrom("Amok oma"));
     }
 
     public static boolean checkPalindrom(String input) {

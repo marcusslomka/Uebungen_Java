@@ -67,9 +67,7 @@ public class SchereSteinPapier {
             System.out.println();
             System.out.println("Ich gewinne!! You suck hard.. lol");
             System.out.println();
-        } else if (bot == "Stein" && spieler == "Papier" ||
-                    bot =="Papier" && spieler == "Schere" ||
-                bot == "Schere" && spieler == "Stein") {
+        } else {
             System.out.println();
             System.out.println("Du Gewinnst! Naja ein blindes Huhn findet auch mal ein Korn. Beim nächsten mal gewinne ich wieder!!");
             System.out.println();
