@@ -10,6 +10,7 @@ public class Boot {
 
     private String type; // Segelboot | Motorboot
     private int personCount;
+    private int rentCount;
     private boolean isLicenceRequired;
     private double pricePerHour;
     private ArrayList<Reservation> reservations;
@@ -20,6 +21,7 @@ public class Boot {
         this.setIsLicenceRequired(isLicenceRequired);
         this.setPricePerHour(pricePerHour);
         this.reservations = new ArrayList<Reservation>();
+        this.rentCount = 0;
     }
 
     public void setType(String type) {
@@ -33,9 +35,14 @@ public class Boot {
     public void setIsLicenceRequired(boolean isLicenceRequired) {
         this.isLicenceRequired = isLicenceRequired;
     }
+
     public void setPricePerHour(double pricePerHour) {
-        if(pricePerHour < 0.0) throw new IllegalArgumentException("Personcount muss positiv sein");
+        if (pricePerHour < 0.0)
+            throw new IllegalArgumentException("Personcount muss positiv sein");
         this.pricePerHour = pricePerHour;
+    }
+    public void uppRentCount() {
+        this.rentCount++; 
     }
 
     public String getType() {
@@ -54,6 +61,10 @@ public class Boot {
         return reservations;
     }
 
+    public int getRentCount() {
+        return this.rentCount;
+    }
+
     public Reservation addReservation(LocalDateTime from, LocalDateTime to, Person p) {
         boolean licenceOK = !isLicenceRequired || isLicenceRequired && p.hasLicence(); 
         if(!licenceOK) throw new IllegalStateException("Licence required to book this boat");
@@ -61,21 +72,22 @@ public class Boot {
         // check availability based on from and to values!!!
         boolean isAvailable = checkIsAvailable(from, to);
         if(!isAvailable) throw new IllegalStateException("Boat not available, please try a different time");
-        
+
         Reservation reservation = new Reservation(p, from, to);
         reservations.add(reservation);
+        uppRentCount();
         return reservation;
     }
- 
+
     private boolean checkIsAvailable(LocalDateTime from, LocalDateTime to) {
         // if can find a reservation that overlaps --> return false
         // else return true
-        for(int i = 0; i < reservations.size(); i++) {
+        for (int i = 0; i < reservations.size(); i++) {
             Reservation reservation = reservations.get(i);
-            boolean isOverlapping =
-                to.isAfter(reservation.getFrom()) && 
-                from.isBefore(reservation.getTo());
-            if(isOverlapping) return false;
+            boolean isOverlapping = to.isAfter(reservation.getFrom()) &&
+                    from.isBefore(reservation.getTo());
+            if (isOverlapping)
+                return false;
         }
         return true;
     }

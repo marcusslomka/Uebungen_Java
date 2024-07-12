@@ -11,7 +11,7 @@ public class Reservation {
         this.from = from;
         this.to = to;
     }
-
+    
     public Person getPerson() {
         return person;
     }

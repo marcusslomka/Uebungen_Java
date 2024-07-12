@@ -27,5 +27,8 @@ public class Main {
 
         boot3.printReservations();
 
+        System.out.println(boot1.getRentCount());
+        
+
     }
 }
