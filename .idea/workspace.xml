@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b10b70a-b07b-4250-93e4-83cb03509c56" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Day14_24.07.11/Boot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day14_24.07.11/Boot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Bootsverleih.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Bootsverleih.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day14_24.07.11/Bootsverleih/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14_24.07.11/DateAndTime/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day14_24.07.11/DateAndTime/DateAndTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day26-Packages/Zugriffschutz/com/example/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/day26-Packages/Zugriffschutz/com/example/library/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day26-Packages/Zugriffschutz/com/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/day26-Packages/Zugriffschutz/com/example/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day27-HashCode/Equals - HashCode - HashMap/Equals - HashCode - HashMap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day27-HashCode/Wort-Buchstabenfrequenzzaehler/Wort-Buchstabenfrequenzzaehler.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "marcusslomka"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/marcusslomka/Uebungen_Java.git",
+    "accountId": "79718073-7a88-4ca0-8642-6b98aa24fb2f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2jmxynww7LC0mHxv02mOIcbyc6z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/supercoder/Desktop/Projects/Java/Übunge_Java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b10b70a-b07b-4250-93e4-83cb03509c56" name="Changes" comment="" />
+      <created>1722006310966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722006310966</updated>
+    </task>
+    <servers />
+  </component>
+</project>

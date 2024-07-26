@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Day12_24.07.09_Arraylist/Day12_24.07.09_Arraylist.iml" filepath="$PROJECT_DIR$/Day12_24.07.09_Arraylist/Day12_24.07.09_Arraylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day13_24.07.10/Day13_24.07.10.iml" filepath="$PROJECT_DIR$/Day13_24.07.10/Day13_24.07.10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day1_24.06.24/Day1_24.06.24.iml" filepath="$PROJECT_DIR$/Day1_24.06.24/Day1_24.06.24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day27-HashCode/Equals - HashCode - HashMap/Equals - HashCode - HashMap.iml" filepath="$PROJECT_DIR$/day27-HashCode/Equals - HashCode - HashMap/Equals - HashCode - HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day27-HashCode/Wort-Buchstabenfrequenzzaehler/Wort-Buchstabenfrequenzzaehler.iml" filepath="$PROJECT_DIR$/day27-HashCode/Wort-Buchstabenfrequenzzaehler/Wort-Buchstabenfrequenzzaehler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24-Hangman/day24-Hangman.iml" filepath="$PROJECT_DIR$/day24-Hangman/day24-Hangman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day25-Interfaces,Vererbung,Polymorphie/day25-Interfaces,Vererbung,Polymorphie.iml" filepath="$PROJECT_DIR$/day25-Interfaces,Vererbung,Polymorphie/day25-Interfaces,Vererbung,Polymorphie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day26-Packages/day26-Packages.iml" filepath="$PROJECT_DIR$/day26-Packages/day26-Packages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Übunge_Java.iml" filepath="$PROJECT_DIR$/Übunge_Java.iml" />
+    </modules>
+  </component>
+</project>
