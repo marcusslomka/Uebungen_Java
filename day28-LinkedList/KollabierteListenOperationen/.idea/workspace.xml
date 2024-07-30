@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd83ecaa-932b-4253-9d41-1f2af8387aa2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Day12_24.07.09_Arraylist/Day12_24.07.09_Arraylist.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day13_24.07.10/Day13_24.07.10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day1_24.06.24/Day1_24.06.24.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day24-Hangman/day24-Hangman.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day25-Interfaces,Vererbung,Polymorphie/day25-Interfaces,Vererbung,Polymorphie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day26-Packages/day26-Packages.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/ArbeitenMitLinkedList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArbeitenMitLinkedList/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day28-LinkedList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eigeneLinkedList/eigeneLinkedList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eigeneLinkedList/src/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eigeneLinkedList/src/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Übunge_Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day14_24.07.11/Boot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day14_24.07.11/Boot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Bootsverleih.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Bootsverleih.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day14_24.07.11/Bootsverleih/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day14_24.07.11/DateAndTime/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day14_24.07.11/DateAndTime/DateAndTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day24-Hangman/Hangman/HangmanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day24-Hangman/Hangman/HangmanMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day24-Hangman/Hangman/Suchwoerter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day26-Packages/Zugriffschutz/com/example/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day26-Packages/Zugriffschutz/com/example/library/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day26-Packages/Zugriffschutz/com/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day26-Packages/Zugriffschutz/com/example/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day27-HashCode/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day27-HashCode/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/ArbeitenMitLinkedList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "marcusslomka"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/marcusslomka/Uebungen_Java.git",
+    "accountId": "79718073-7a88-4ca0-8642-6b98aa24fb2f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2jvBKz01NNsoiKhFimjA8vOeJgL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd83ecaa-932b-4253-9d41-1f2af8387aa2" name="Changes" comment="" />
+      <created>1722257611322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722257611322</updated>
+    </task>
+    <servers />
+  </component>
+</project>
