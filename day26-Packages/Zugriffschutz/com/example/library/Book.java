@@ -1,10 +1,11 @@
 package com.example.library;
 
-public class Book {
+public abstract class Book {
     private String title;
     private String author;
     String isbn;
     public int year;
+    
     public Book(String title, String author, String isbn, int year) {
         this.title = title;
         this.author = author;

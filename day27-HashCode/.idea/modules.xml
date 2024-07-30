@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArraysAufGleichheitPruefen/ArraysAufGleichheitPruefen.iml" filepath="$PROJECT_DIR$/ArraysAufGleichheitPruefen/ArraysAufGleichheitPruefen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Equals - HashCode - HashMap/Equals - HashCode - HashMap.iml" filepath="$PROJECT_DIR$/Equals - HashCode - HashMap/Equals - HashCode - HashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Wort-Buchstabenfrequenzzaehler/Wort-Buchstabenfrequenzzaehler.iml" filepath="$PROJECT_DIR$/Wort-Buchstabenfrequenzzaehler/Wort-Buchstabenfrequenzzaehler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/day15-HashCode.iml" filepath="$PROJECT_DIR$/.idea/day15-HashCode.iml" />

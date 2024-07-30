@@ -4,15 +4,23 @@ import java.time.Month;
 public class Main {
     
     public static void main(String[] args) {
+        Bootsverleih marcusBootsverleih = new Bootsverleih();
+
         Boot boot1 = new Boot("Segelboot", 4, false, 20);
         Boot boot2 = new Boot("Motorboot", 4, false, 36);
         Boot boot3 = new Boot("Motorboot", 2, true, 28);
         Boot boot4 = new Boot("Segelboot", 16, true, 92);
         Boot boot5 = new Boot("Segelboot", 2, false, 16);
 
-        Person andreas = new Person("Andreas", true);
-        Person anton = new Person("Anton", true);
-        Person peter = new Person("Peter", false);
+        marcusBootsverleih.addBoot(boot1);
+        marcusBootsverleih.addBoot(boot2);
+        marcusBootsverleih.addBoot(boot3);
+        marcusBootsverleih.addBoot(boot4);
+        marcusBootsverleih.addBoot(boot5);
+
+        Person andreas = new Person("Andreas", true, 1);
+        Person anton = new Person("Anton", true, 2);
+        Person peter = new Person("Peter", false, 3);
 
         LocalDateTime sonnabend12 = LocalDateTime.of(2024, Month.JULY, 13, 12, 0);
         LocalDateTime sonntag11 = LocalDateTime.of(2024, Month.JULY, 14, 11, 0);
@@ -28,7 +36,12 @@ public class Main {
         boot3.printReservations();
 
         System.out.println(boot1.getRentCount());
-        
 
+        System.out.println("------------------------------------------");
+
+        //favboot einer Person ermitteln
+        System.out.println(peter.favBoot(marcusBootsverleih));
+
+        System.out.println("------------------------------------------");
     }
 }

@@ -24,11 +24,13 @@ public class DateAndTime {
         System.out.println(secondDate.format(format1));
 
         //3.Alter berechnen
-        LocalDate todayDate = LocalDate.now();
-        LocalDate birthday = LocalDate.of(1997, 1, 17);
+        LocalDateTime todayDate = LocalDateTime.now();
+        LocalDateTime birthday = LocalDateTime.of(1997, 1, 17, 18, 0, 0);
         System.out.println(birthday);
-        Duration alter = Duration.between(birthday, todayDate);
-        System.out.println(alter);
+
+        Period alter = Period.between(birthday.toLocalDate(), todayDate.toLocalDate());
+        System.out.println(alter.getDays()); //??????
+        
         
     }
 }
