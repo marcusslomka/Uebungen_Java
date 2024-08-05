@@ -40,4 +40,9 @@ class KontoTest {
             k1.ueberweisen(k2,-20);
         });
     }
+    @Test
+    void getKontonummer(){
+        Konto k1 = new Konto("DE1223455", 100);
+        assertEquals("DE1223455",k1.getKontonummer());
+    }
 }
