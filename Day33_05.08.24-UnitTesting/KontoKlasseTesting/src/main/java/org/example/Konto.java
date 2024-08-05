@@ -15,7 +15,7 @@ public class Konto {
     }
     public void abheben(double betrag){
         if (betrag < 0) throw new IllegalArgumentException("Betrag muss positiv sein!");
-        if (this.saldo - betrag < 0) throw new IllegalArgumentException("Das Konto darf nicht überzogen werden!")
+        if (this.saldo - betrag < 0) throw new IllegalArgumentException("Das Konto darf nicht überzogen werden!");
         this.saldo -= betrag;
     }
     public double getSaldo(){
@@ -25,7 +25,8 @@ public class Konto {
         return this.kontonummer;
     }
     public void ueberweisen(Konto zielkonto, double betrag){
-        if (this.saldo - betrag < 0) throw new IllegalArgumentException("Das Konto hat nicht genügend Geld um die Überweisung zu tätigen!");
+        if(betrag < 0) throw new IllegalArgumentException("Betrag muss positiv sein!");
+        if ((this.saldo - betrag) < 0) throw new IllegalArgumentException("Das Konto hat nicht genügend Geld um die Überweisung zu tätigen!");
         this.saldo -= betrag;
         zielkonto.einzahlen(betrag);
     }
