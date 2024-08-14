@@ -1,3 +1,25 @@
+/* Filme gruppieren nach Genre: */
 SELECT COUNT(*) AS `COUNT TITLE`,GENRE
 FROM MOVIES
 GROUP BY GENRE;
+
+*/ Durchschnittliches Erscheinungsjahr pro Genre: */
+SELECT avg(RELEASEYEAR),GENRE
+FROM MOVIES
+GROUP BY GENRE;
+
+/*Top 5 Genres nach Anzahl der Filme: */
+SELECT COUNT(*) AS `COUNT TITEL`,GENRE
+FROM MOVIES
+GROUP BY GENRE
+ORDER BY COUNT(*) DESC LIMIT 5;
+
+/* Jahr mit den meisten Filmen:*/
+SELECT RELEASEYEAR, COUNT (ID) as `COUNT RELEASE_YEAR`
+FROM MOVIES
+GROUP BY RELEASEYEAR
+ORDER BY `COUNT RELEASE_YEAR` DESC LIMIT 2;
+
+/* */
+/* */
+/* */
